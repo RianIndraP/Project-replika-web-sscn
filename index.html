@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body{
+            color: #3e4d5c;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            color: white;
+        }
+        .hover_gelap{
+            transition: filter 0.3s ease;
+        }
+        .hover_gelap:hover{
+            filter: brightness(85%);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar shadow-sm">
+        <div class="container d-flex">
+            <a class="navbar-brand border-0" href="#">
+                <img src="assets/img/Nav img.png" alt="SSCASN" width="250px">
+            </a>
+            <div class="">
+                <h3>Pendaftaran Akun SSCASN 2024</h3>
+                <h4>Ikuti langkah pendaftaran akun berikut ini. Isilah data dengan benar </h4>
+            </div>
+            <div>
+                <a type="button" class="rounded-0 p-2 btn border-0 hover_gelap" style="background-color: #dfba44;"><i class="fa-solid fa-question-circle text-white"></i> Helpdesk</a>
+                <a type="button" class="rounded-0 p-2 border-0 hover_gelap" style="background-color: #f3565d;"><i class="fa fa-home"></i> Portal</a>
+                <a type="button" class="rounded-0 p-2 border-0 hover_gelap" style="background-color: #45b6af;">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
