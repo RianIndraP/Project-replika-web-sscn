@@ -17,7 +17,7 @@
 
         a {
             text-decoration: none;
-            color: white;
+            color: white !important;
         }
 
         button {
@@ -30,6 +30,12 @@
 
         .hover_gelap:hover {
             filter: brightness(85%);
+        }
+
+        label {
+            color: #777777;
+            margin: 5px 10px;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -45,18 +51,26 @@
                 <h3>Pendaftaran Akun SSCASN 2024</h3>
                 <h4>Ikuti langkah pendaftaran akun berikut ini. Isilah data dengan benar </h4>
             </div>
-            <div>
-                <a type="button" class="btn btn-warning rounded-0 p-2 btn border-0 hover_gelap"><i
-                        class="fa-solid fa-question-circle text-white"></i> Helpdesk</a>
-                <a type="button" class="btn btn-danger p-2 border-0 hover_gelap"><i class="fa fa-home"></i> Portal</a>
-                <a type="button" class="btn btn-success p-2 border-0 hover_gelap"><i class="fa fa-key"></i> Login</a>
+            <div class="mb-auto p-2">
+                <a type="button" class="btn rounded-0 p-2 btn border-0 hover_gelap" style="background-color: #dfba49;">
+                    <i class="fa-solid fa-question-circle text-white"></i>
+                    Helpdesk
+                </a>
+                <a type="button" class="btn p-2 border-0 hover_gelap rounded-0" style="background-color: #f3565d;">
+                    <i class="fa fa-home"></i> 
+                    Portal
+                </a>
+                <a type="button" class="btn p-2 border-0 hover_gelap rounded-0" style="background-color: #45b6af;">
+                    <i class="fa fa-key"></i> 
+                    Login
+                </a>
             </div>
         </div>
     </nav>
 
     <center>
         <div class="mt-5 container d-flex border border-primary-subtle">
-            <div class="text-start w-100">
+            <div class="text-start p-4">
                 <h3>Pendaftaran Akun SSCASN 2024</h3>
                 <h4>Langkah 1: Pengecekan Identitas</h4>
                 <br>
@@ -94,12 +108,25 @@
                     </div>
                     <div class="">
                         <label>Nomor Handphone Aktif</label>
-                        <input class="form-control border-danger rounded-0"><br>
+                        <input class="form-control border-danger rounded-0">
+                        <b style="color: #CC3333; font-style: italic; font-size: 13px;">Pastikan nomor handphone yang diinput aktif sampai dengan proses seleksi selesai.</b>
                     </div>
+                    <div class="">
+                        <label>Email Aktif (pribadi)</label>
+                        <input class="form-control border-danger rounded-0">
+                        <b style="color: #CC3333; font-style: italic; font-size: 13px;">Pastikan email yang diinput aktif sampai dengan proses seleksi selesai.</b>
+                    </div>
+                    <div class="mt-3">
+                        <img src="assets/img/captcha.png" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <input class="form-control border-danger rounded-0" placeholder="Masukkan kode CAPTCHA di atas">
+                    </div>
+                    <a href="login.html"><button class="btn btn-success rounded-0" disabled>Lanjutkan</button></a>
                 </form>
             </div>
             <div style="padding: 15px;" class="col-md-7">
-                <img src="assets/img/gbr_dftr_new.png" alt="" class="img-fluid">
+                <img src="assets/img/gbr_dftr_new.png" alt="" class="img-fluid" width="100%">
             </div>
         </div>
     </center>
