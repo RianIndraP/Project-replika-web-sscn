@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Seleksi CASN Nasional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background-image: url('assets/img/bg-doodle.png'); background-size: cover;">
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="relative bg-white">
+                <div class="mx-auto px-4 py-2 pb-3 shadow-lg">
+                    <div
+                        class="flex flex-col md:flex-col sm:flex-col lg:flex-row md:justify-center lg:justify-between pb-1 mx-5">
+                        <div class="flex sm:flex-col lg:flex-row md:flex-col w-6/7 justify-center">
+                            <div class="mr-3 mt-2 w-6/7 flex justify-center"><img style="width:140px;"
+                                    src="assets/img/Nav img.png"></div>
+                            <div class="mt-5 text-xl text-gray-800">
+                                Sistem Seleksi Calon Aparatur Sipil Negara Tahun 2024
+                            </div>
+                        </div>
+                        <div class="text-white flex justify-center mt-4 w-6/7">
+                            <div><a href="" target="_blank" class="text-gray-500 mr-6 text-md hover:text-sky-500">BUKU
+                                    PETUNJUK</a></div>
+                            <div><a href="" target="_blank"
+                                    class="text-gray-500 mr-6 text-md hover:text-sky-500">HELPDESK</a></div>
+                            <div><a href="" target="_blank"
+                                    class="text-gray-500 mr-6 text-md hover:text-sky-500">PORTAL</a></div>
+                            <div class="pl-6 border-l border-gray-300">
+                                <a href="index.html"
+                                    class="bg-sky-400 py-2 px-6 rounded-full shadow-md shadow-gray-400 text-sm hover:bg-sky-500">
+                                    Buat Akun
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header">
+                <div class="header">
+                    <div class="container">
+                        <div class="row row-centered" style="margin-bottom: 10px;">
+                            <div class="col-md-8">
+                                <div class="row"></div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-12">
+                                <div class="alert alert-warning">
+                                    <label id="pesanBrowser"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-5 mb-5"></div>
+
+        <div class="flex justify-center">
+            <div class="bg-white px-8 py-6 md:w-3/4 lg:w-1/4 shadow-2xl text-center text-xl text-gray-500">
+                <div class="border-b pb-3">
+                    <div class="mb-3 w-full flex justify-center"></div>
+                    <h4>
+                        <b>Seluruh calon pelamar wajib membuat akun.</b>
+                    </h4>
+                    <br>
+                    Login SSCASN 2024
+                </div>
+                <form id="FormLogin" method="POST">
+                    <input type="hidden" name="_csrf" />
+                    <div class="mt-8">
+                        <input type="text"
+                            class="w-full text-sm px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-300 focus:ring-2"
+                            placeholder="Nomor Induk Kependudukan" id="nik" name="username" autocomplete="off"
+                            maxlength="18" />
+                    </div>
+                    <div class="mt-5">
+                        <input type="password"
+                            class="w-full text-sm px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-300 focus:ring-2"
+                            placeholder="Password" id="password" name="password" />
+                    </div>
+                    <div class="mt-5">
+                        <img src="assets/img/captcha.png" alt="Captcha" id="captchaImg"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <br>
+                        <input
+                            class="w-full text-sm px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-300 focus:ring-2"
+                            name="captchaResponse" placeholder="Masukkan kode CAPTCHA di atas">
+                    </div>
+                    <div class="mt-8">
+                        <a href="welcome.html"
+                            class="bg-blue-500 py-2 px-6 rounded-full shadow-md shadow-gray-400 text-white text-sm hover:bg-blue-600 w-full cursor-pointer">Masuk</a>
+                    </div>
+                </form>
+                <br>
+
+                <div class="text-center text-sm">
+                    <b>Ini adalah aplikasi SSCASN Pendaftaran Tahun 2024, untuk mengakses pengadaan tahun 2023 silakan
+                        kunjungi link</b>
+                    <a href="" class="text-blue-400" target="_blank">
+                        <b>disini</b>
+                    </a>
+                </div>
+                <div class="mt-3 text-center text-sm border-t pt-3">
+                    <div>Lupa Password Anda ?</div>
+                    <a href="" class="text-blue-400" target="_blank">Klik disini untuk mereset password Anda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // if (navigator.userAgent.indexOf("Safari") != -1) {
+    //     alert('Direkomendasikan menggunakan browser Google Chrome atau Mozilla Firefox versi terbaru.\n\n' +
+    //         'Aktifkan kamera pada perangkat saat melakukan registrasi.');
+    // }
+</script>
+
+</html>
